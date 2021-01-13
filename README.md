@@ -18,3 +18,5 @@ go get github.com/hugorosario/nifptvalidator
     nif := "123456789"
     fmt.Println(nif, "=>", validator.IsValidNif(nif))
 ```
+
+MIT License
