@@ -1,4 +1,4 @@
-# nifptvalidator
+# NIF PT Validator
 A portuguese NIF (Número de Identificação Fiscal) validator.
 
 ## Usage
