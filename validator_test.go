@@ -1,4 +1,4 @@
-package validator
+package nifptvalidator
 
 import "testing"
 
@@ -20,5 +20,11 @@ func TestValidator(t *testing.T) {
 	}
 	if IsValidNif("23232323A") {
 		t.Error("Expected NIF to have an invalid checksum")
+	}
+	if !IsValidNif("999999990") {
+		t.Error("Expected 9999990 to be a valid NIF")
+	}
+	if !IsValidNif("123456789") {
+		t.Error("Expected 123456789 to be a valid NIF")
 	}
 }

@@ -1,4 +1,24 @@
-package validator
+/*
+Package nifptvalidator implements a validator for the Portuguese NIF (Número de Identificação Fiscal).
+It follow the specs defined in the wikipedia page at  https://pt.wikipedia.org/wiki/N%C3%BAmero_de_identifica%C3%A7%C3%A3o_fiscal
+
+Example:
+
+	package main
+
+	import (
+		"fmt"
+
+		"github.com/hugorosario/nifptvalidator"
+	)
+
+	func main() {
+		nif := "123456789"
+		fmt.Println(nif, "=>", nifptvalidator.IsValidNif(nif))
+	}
+
+*/
+package nifptvalidator
 
 import (
 	"strconv"

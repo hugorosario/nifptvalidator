@@ -13,14 +13,14 @@ go get github.com/hugorosario/nifptvalidator
 ### Import the validator
 
 ```go
-    import	"github.com/hugorosario/nifptvalidator/validator"
+    import	"github.com/hugorosario/nifptvalidator"
 ```
 
 ### Use it
 
 ```go
     nif := "123456789"
-    fmt.Println(nif, "=>", validator.IsValidNif(nif))
+    fmt.Println(nif, "=>", nifptvalidator.IsValidNif(nif))
 ```
 
 MIT License
